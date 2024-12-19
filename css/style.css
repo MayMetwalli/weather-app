@@ -181,7 +181,7 @@ nav{
     background-color: #262936;
     padding-block: 50px;
 }
-.contact-form{
+.footer-form{
     position: relative;
     .form-control:focus{
         box-shadow: none !important;
