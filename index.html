@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+        <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="/css/style.css"/>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" rel="stylesheet">
+</head>
+
+
+<body>
+  <!--NAVBAR-->
+        <nav class="navbar navbar-expand-lg">
+                <div class="container m-auto">
+                        <div class="nav-logo">
+                                <a class="text-decoration-none" href="index.html"><span><img class="logo-img" src="imgs/logo@2x.png" alt="logo"/></span>Weather</a>
+                        </div>
+                        <div class="toggle-btn">
+                          <button id="navbar-toggler" class="border-0 bg-transparent d-none"><i class="fa-solid fa-bars toggler-icon"></i></button>
+                        </div>
+                  <div class="collapse navbar-collapse nav-menu " id="nav-menu">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <button class="btn"><a class="nav-link active text-decoration-none" aria-current="page" href="index.html">Home</a></button>
+                      </li>
+                      <li class="nav-item">
+                        <button class="btn"><a class="nav-link text-decoration-none" aria-current="page" href="#">News</a></button>
+                        </li>
+                        <li class="nav-item">
+                        <button class="btn"><a class="nav-link text-decoration-none" aria-current="page" href="#">Live Cameras</a></button>
+                        </li>
+                        <li class="nav-item">
+                        <button class="btn"><a class="nav-link text-decoration-none" aria-current="page" href="#">Photos</a></button>
+                        </li>
+                        <li class="nav-item">
+                        <button class="btn"><a class="nav-link text-decoration-none" aria-current="page" href="contact.html">Contact</a></button>
+                        </li>
+
+                    </ul>
+
+                  </div>
+                </div>
+                <div class="collapsed-navbar container w-75 rounded-1 d-none">
+                  <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center">
+                    <li class="nav-item">
+                      <a class="nav-link active text-decoration-none" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-decoration-none" aria-current="page" href="#">News</a>
+                      </li>
+                      <li class="nav-item">
+                      <a class="nav-link text-decoration-none" aria-current="page" href="#">Live Cameras</a>
+                      </li>
+                      <li class="nav-item">
+                      <a class="nav-link text-decoration-none" aria-current="page" href="#">Photos</a>
+                      </li>
+                      <li class="nav-item">
+                      <a class="nav-link text-decoration-none" aria-current="page" href="contact.html">Contact</a>
+                      </li>
+                  </ul>
+          
+                </div>
+              </nav>
+
+  <!--HERO-->
+  <header id="weather-body">
+  <div class="container-fluid m-auto">
+    <div class="form searchbar d-flex">
+<form class="d-flex" role="search">
+        <input class="form-control" type="search" id="search" placeholder="Find your location..." aria-label="Search">
+        <button class="btn search-btn" id="search-btn" type="submit">Find</button>
+      </form>
+    </div>
+
+    <div class="container m-auto weather-display text-white text-center mt-5">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="title-1 d-flex justify-content-between p-1">
+            <p class="today text-white-50"></p>
+            <p class="today-date text-white-50"></p>
+          </div>
+          <div class="weather-body-1">
+            <p class="city-name text-start ps-2 pt-3 text-white-50 fs-5"></p>
+            <h2 class="today-temp"></h2>
+            <img class="icon"/>
+            <p class="condition text-start ps-2">Clear</p>
+            <div class="weather-description d-flex justify-content-evenly">
+              <span class="d-flex align-items-center gap-1"><img src="imgs/icon-umberella.png" alt="umbrella"><p class="text-secondary m-0">20%</p></span>
+              <span class="d-flex align-items-center gap-1"><img src="imgs/icon-wind.png" alt="wind"><p class="text-secondary m-0">18Km/h</p></span>
+              <span class="d-flex align-items-center gap-1"><img src="imgs/icon-compass.png" alt="compass"><p class="text-secondary m-0">East</p></span>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-lg-4">
+          <div class="title-2 py-1">
+            <p class="tomorrow text-white-50"></p>
+          </div>
+          <div class="weather-body-2 d-flex flex-column justify-content-center align-items-center">
+            <img class="icon-2"/>
+            <h5 class="tomorrow-max-temp fw-bolder"></h5>
+            <p class="tomorrow-min-temp"></p>
+            <p class="tomorrow-condition"></p>
+          </div>
+        </div>
+
+
+        <div class="col-lg-4">
+          <div class="title-3 py-1">
+            <p class="after-tomorrow text-white-50"></p>
+          </div>
+          <div class="weather-body-3 d-flex flex-column justify-content-center align-items-center">
+            <img class="icon-3"/>
+            <h5 class="aftertomorrow-max-temp fw-bolder"></h5>
+            <p class="aftertomorrow-min-temp"></p>
+            <p class="aftertomorrow-condition"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </header>
+
+  <!--CONTACT-->
+  <footer id="contact-section" class="position-static">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8">
+          <div class="contact-form ">
+            <input class="form-control subscribe-input" type="text" id="subscribe" placeholder="Enter your email to subscribe...">
+            <button class="btn subscribe-btn" id="subscribe-btn" type="submit">Subscribe</button>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="contact-icons text-end me-5">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-google-plus-g"></i>
+            <i class="fa-brands fa-pinterest"></i>
+          </div>
+        </div>
+        <p class="mt-4 copyright-info">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="/js/main.js"></script>
+</body>
+</html>
