@@ -4,7 +4,10 @@ body{
 position: relative;
 }
 /*NAVBAR*/
-
+.nav-logo{
+    font-size: 16px;
+    font-weight: 700;
+}
 .logo-img{
     width: 50px;
 }
@@ -246,4 +249,63 @@ nav{
     #contact-section{
         text-align: center;
     }
+    .card{
+        width: 100% !important;
+    }
+}
+
+
+/* CONTACT PAGE */
+.card{
+    background-color: #262936;
+}
+.card-body{
+    p{
+        width: 50%;
+    }
+    i{
+        color: #009AD8;
+        font-size: 15px;
+
+    }
+}
+.contact-form{
+   
+    input{
+        padding: 10px;
+        padding-left: 20px;
+        background-color: transparent !important;
+        border-radius: 50px;
+        border: 2px solid #727374a5 !important;
+        color: white !important;
+        transition: all 0.2s;
+    }
+    input::placeholder, textarea::placeholder{
+        color: #828487 !important;
+        
+
+    }
+    textarea{
+        background-color: transparent !important;
+        border-radius: 20px;
+        border: 2px solid #727374a5 !important; 
+        padding-bottom: 70px !important;
+        color: white !important;
+        transition: all 0.2s;
+    }
+    input:hover, textarea:hover{
+        border: 2px solid #009AD8 !important;
+    }
+}
+.submit-btn{
+    text-align: right;
+    button{
+        background-color: #009AD8 !important;
+        color: white !important;
+        border-radius: 30px !important;
+        padding-inline: 25px;
+    }
+    
+    
+    
 }
