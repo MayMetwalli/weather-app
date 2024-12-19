@@ -13,7 +13,7 @@ document.getElementById("navbar-toggler").addEventListener('click', function(){
 /*TODAY WEATHER DISPLAY*/
 
 function checkWeather(city){
-    const apiURL = 'http://api.weatherapi.com/v1/forecast.json?key=20f20a9de4ad4267a15170855241612&q=' + city + '&days=7';
+    const apiURL = 'https://api.weatherapi.com/v1/forecast.json?key=20f20a9de4ad4267a15170855241612&q=' + city + '&days=7';
 var weatherData = [];
 var todayData = new XMLHttpRequest();
 todayData.open('GET',apiURL);
